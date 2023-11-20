@@ -1,19 +1,35 @@
 :root {
     --main-color: rgb(162, 162, 162);
-    
+    --mainFontColor: rgb(0, 0, 0);
+
 }
 
 body {
     margin: 0;
 }
 
+/*HEADER*/
 
 #headerNavContainer {
     display: flex;
+}
 
-    /*
+#headerImageContainer {
+    display: flex;
     align-items: center;
-    justify-content: space-between; */
+    justify-content: center;
+}
+
+#headerImageContainer > h1 {
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+}
+
+#headerImage {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
 
 nav {
@@ -29,18 +45,101 @@ nav > a {
     text-decoration: none;
 }
 
-header {
-    background-color: grey;
+/*MAIN*/
+
+main {
+    margin: 4rem 0;
+    padding: 2rem 0;
+}
+h2 {
+    text-align: center;
 }
 
+#indexSectionOneContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+}
+
+#indexSectionOneContainer > div {
+    width: 250px;
+    padding: 0 7rem;
+}
+
+#indexSectionOneContainer > div > p > button {
+    margin: 1rem 0;
+}
+
+#indexSectionOneContainer > div > p > a {
+    color: var(--mainFontColor);
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#indexSectionTwoContainer {
+    width: 100vw;
+    height: 50vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#indexSectionTwoText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem;
+    background-color: rgb(201, 201, 255);
+}
+
+#indexSectionTwoText > h1 {
+    font-size: 3rem;
+}
+
+#indexSectionTwoText > h1 > span {
+    color: rgb(255, 255, 255);
+}
+
+#indexSectionTwoText > p > a > button {
+    margin-top: 2rem;
+    height: 3rem;
+    background-color: var(--mainFontColor);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#indexSectionTwoImage {
+    background-image: url(https://placehold.co/100x100);
+    height: 100%;
+}
+
+/*FOOTER*/
 footer {
-    background-color: red;
-    height: 10rem;
+    background-color: rgb(255, 198, 136);
+    text-align: center;
 }
 
 #footerIcon {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 0 2em;
+}
+
+#footerIcon > img {
+    margin: 0 2rem;
+}
+
+hr {
+    border: 1px solid white;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+#footerContact {
+    padding-bottom: 2rem;
 }
