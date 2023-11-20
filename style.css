@@ -1,0 +1,46 @@
+:root {
+    --main-color: rgb(162, 162, 162);
+    
+}
+
+body {
+    margin: 0;
+}
+
+
+#headerNavContainer {
+    display: flex;
+
+    /*
+    align-items: center;
+    justify-content: space-between; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 5rem;
+}
+
+nav > a {
+    padding: 0px 50px;
+    text-decoration: none;
+}
+
+header {
+    background-color: grey;
+}
+
+footer {
+    background-color: red;
+    height: 10rem;
+}
+
+#footerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2em;
+}
