@@ -2,9 +2,9 @@
     --main-color: rgb(162, 162, 162);
     --mainFontColor: rgb(0, 0, 0);
 
-    --fontSizeBig: 5rem;
-    --fontSizeMedium: 3rem;
-    --fontSizeSmall: 2rem;
+    --sizeBig: 5rem;
+    --sizeMedium: 3rem;
+    --sizeSmall: 2rem;
 
 }
 
@@ -14,19 +14,19 @@ body {
 }
 
 h1 {
-    font-size: var(--fontSizeBig);
+    font-size: var(--sizeBig);
 }
 
 h2 {
-    font-size: var(--fontSizeMedium);
+    font-size: var(--sizeMedium);
 }
 
 h3 {
-    font-size: var(--fontSizeSmall);
+    font-size: var(--sizeSmall);
 }
 
 main {
-    padding-bottom: 8rem;
+    padding: 3rem;
 }
 
 /*HEADER*/
@@ -41,16 +41,22 @@ main {
     justify-content: center;
 }
 
-#headerImageContainer > h1 {
+#headerImageContainer>h1 {
     position: absolute;
     top: 10rem;
     left: 10rem;
 }
 
-#headerImage {
+#headerIcon {
     position: absolute;
     top: 1rem;
     left: 1rem;
+}
+
+#headerImage {
+    background-image: url(https://placehold.co/1400x600);
+    width: 100vw;
+    height: 70vh;
 }
 
 nav {
@@ -61,7 +67,7 @@ nav {
     height: 5rem;
 }
 
-nav > a {
+nav>a {
     padding: 0px 50px;
     text-decoration: none;
 }
@@ -70,70 +76,6 @@ nav > a {
 
 h2 {
     text-align: center;
-}
-
-#indexSectionOneContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    display: flex;
-    justify-content: center;
-}
-
-#indexSectionOneContainer > article {
-    width: 250px;
-    padding: 0 7rem;
-}
-
-#indexSectionOneContainer > article > p > button {
-    margin: 1rem 0;
-}
-
-#indexSectionOneContainer > article > p > a {
-    color: var(--mainFontColor);
-}
-
-.imageContainer {
-    display: flex;
-    justify-content: center;
-}
-
-#indexSectionTwoContainer {
-    width: 100vw;
-    height: 50vh;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#indexSectionTwoText {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 6rem;
-    background-color: rgb(201, 201, 255);
-}
-
-#indexSectionTwoText > h1 {
-    font-size: 3rem;
-}
-
-#indexSectionTwoText > h1 > span {
-    color: rgb(255, 255, 255);
-}
-
-#indexSectionTwoText > p > a > button {
-    margin-top: 2rem;
-    height: 3rem;
-    background-color: var(--mainFontColor);
-    color: white;
-    border: none;
-    padding: 1rem;
-    font-weight: bold;
-}
-
-#indexSectionTwoImage {
-    background-image: url(https://placehold.co/100x100);
-    height: 100%;
 }
 
 /*FOOTER*/
@@ -147,7 +89,7 @@ footer {
     justify-content: center;
 }
 
-#footerIcon > img {
+#footerIcon>img {
     margin: 0 2rem;
 }
 
@@ -159,4 +101,125 @@ hr {
 
 #footerContact {
     padding-bottom: 2rem;
+}
+
+
+/* INDEX */
+#indexSectionOneContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+}
+
+#indexSectionOneContainer>article {
+    width: 250px;
+    padding: 0 7rem;
+}
+
+#indexSectionOneContainer>article>p>button {
+    margin: 1rem 0;
+}
+
+#indexSectionOneContainer>article>p>a {
+    color: var(--mainFontColor);
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#indexSectionTwo {
+    display: flex;
+    justify-content: center;
+}
+
+#indexSectionTwoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#indexSectionTwoText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem;
+    background-color: rgb(201, 201, 255);
+    border-radius: 0 10em 0 0;
+}
+
+#indexSectionTwoText>h1 {
+    font-size: 3rem;
+}
+
+#indexSectionTwoText>h1>span {
+    color: rgb(255, 255, 255);
+}
+
+#indexSectionTwoText>p>a>button {
+    margin-top: 2rem;
+    height: 3rem;
+    background-color: var(--mainFontColor);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#indexSectionTwoImage {
+    background-image: url(https://placehold.co/100x100);
+    height: 100%;
+    border-radius: 0 0 0 10em;
+}
+
+/* PORTFOLIO */
+#portfolioSectionOne {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#portfolioSectionContainer {
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 600px;
+    width: 600px;
+}
+
+.imageWrap {
+    border: 1px solid blue;
+    position: relative;
+}
+
+#imageDescriptionLayerOne {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+#imageDescriptionLayerOne > p {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.imageWrap>img {
+    background-image: url(https://placehold.co/100x100);
+    height: 100%;
+    width: 100%;
+}
+
+.imageWrap:hover #imageDescriptionLayerOne {
+    visibility: visible;
+    opacity: 1;
 }
