@@ -2,10 +2,31 @@
     --main-color: rgb(162, 162, 162);
     --mainFontColor: rgb(0, 0, 0);
 
+    --fontSizeBig: 5rem;
+    --fontSizeMedium: 3rem;
+    --fontSizeSmall: 2rem;
+
 }
 
+/*EVERYTHING*/
 body {
     margin: 0;
+}
+
+h1 {
+    font-size: var(--fontSizeBig);
+}
+
+h2 {
+    font-size: var(--fontSizeMedium);
+}
+
+h3 {
+    font-size: var(--fontSizeSmall);
+}
+
+main {
+    padding-bottom: 8rem;
 }
 
 /*HEADER*/
@@ -22,7 +43,7 @@ body {
 
 #headerImageContainer > h1 {
     position: absolute;
-    top: 8rem;
+    top: 10rem;
     left: 10rem;
 }
 
@@ -47,10 +68,6 @@ nav > a {
 
 /*MAIN*/
 
-main {
-    margin: 4rem 0;
-    padding: 2rem 0;
-}
 h2 {
     text-align: center;
 }
@@ -62,16 +79,16 @@ h2 {
     justify-content: center;
 }
 
-#indexSectionOneContainer > div {
+#indexSectionOneContainer > article {
     width: 250px;
     padding: 0 7rem;
 }
 
-#indexSectionOneContainer > div > p > button {
+#indexSectionOneContainer > article > p > button {
     margin: 1rem 0;
 }
 
-#indexSectionOneContainer > div > p > a {
+#indexSectionOneContainer > article > p > a {
     color: var(--mainFontColor);
 }
 
