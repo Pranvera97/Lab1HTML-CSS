@@ -5,6 +5,7 @@
     --sizeBig: 5rem;
     --sizeMedium: 3rem;
     --sizeSmall: 2rem;
+    --sizeXSmall: 1rem;
 
 }
 
@@ -19,6 +20,8 @@ h1 {
 
 h2 {
     font-size: var(--sizeMedium);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -26,7 +29,11 @@ h3 {
 }
 
 main {
-    padding: 3rem;
+    padding: 3rem 0;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /*HEADER*/
@@ -72,12 +79,6 @@ nav>a {
     text-decoration: none;
 }
 
-/*MAIN*/
-
-h2 {
-    text-align: center;
-}
-
 /*FOOTER*/
 footer {
     background-color: rgb(255, 198, 136);
@@ -101,6 +102,14 @@ hr {
 
 #footerContact {
     padding-bottom: 2rem;
+}
+
+#footerContact > a > button {
+    background-color: var(--mainFontColor);
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    border: none;
 }
 
 
@@ -146,7 +155,7 @@ hr {
     flex-direction: column;
     padding: 6rem;
     background-color: rgb(201, 201, 255);
-    border-radius: 0 10em 0 0;
+   /* border-radius: 0 10em 0 0;*/
 }
 
 #indexSectionTwoText>h1 {
@@ -170,7 +179,7 @@ hr {
 #indexSectionTwoImage {
     background-image: url(https://placehold.co/100x100);
     height: 100%;
-    border-radius: 0 0 0 10em;
+  /*  border-radius: 0 0 0 10em; */ 
 }
 
 /* PORTFOLIO */
@@ -262,4 +271,125 @@ hr {
 .imageWrap:hover #imageDescriptionLayerNine {
     visibility: visible;
     opacity: 1;
+}
+
+/*ABOUT ME*/
+
+#aboutSectionOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: orange;
+}
+
+#aboutSectionOne > div > h2 > span {
+    color: red;
+}
+
+#aboutSectionOne > div  {
+    margin: var(--sizeSmall) var(--sizeBig);
+}
+
+#aboutSectionTwo > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#aboutSectionTwo > div > div {
+    margin: var(--sizeSmall) var(--sizeBig); 
+}
+
+#aboutSectionThree {
+    background-color: orange;
+    padding: var(--sizeMedium);
+}
+
+#aboutSectionThree > h2 {
+    margin-top: 0;
+}
+
+#aboutSectionThree > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#aboutSectionThree > div > div {
+    margin: 0 var(--sizeSmall);
+    padding: var(--sizeSmall);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 var(--sizeSmall) 0 var(--sizeSmall);
+}
+
+.aboutIcons {
+    border: 1px solid green;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTACT */
+
+#conctactSectionOne {
+    background-color: orange;
+    padding: 1rem;
+}
+
+#conctactSectionOne > div > h2 {
+    margin-top: 0;
+    width: 100vw;
+}
+
+#contactSectionTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+#contactContainerOne {
+    grid-column: 1;
+    border: 1px solid red;
+}
+
+
+#contactContainerTwo {
+    grid-column: 2/4; 
+    border: 1px solid yellow;
+    background-color: orange;
+    padding: 2rem;
+}
+
+#contactContainerTwo > h2 {
+    text-align: left;
+}
+
+#contactFormUpperArea {
+    display: flex;
+    flex-direction: row;
+}
+
+#contactFormUpperArea > div, #contactFormLowerArea {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding: 1rem;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input {
+    height: 2rem;
 }
