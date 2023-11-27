@@ -196,7 +196,7 @@ hr {
     position: relative;
 }
 
-#imageDescriptionLayerOne {
+.imageWrap > div {
     text-align: center;
     position: absolute;
     top: 0;
@@ -208,18 +208,58 @@ hr {
     transition: opacity .2s, visibility .2s;
 }
 
-#imageDescriptionLayerOne > p {
+.imageWrap > div > p {
     transition: .2s;
     transform: translateY(1em);
 }
 
-.imageWrap>img {
-    background-image: url(https://placehold.co/100x100);
+.imageWrap > img {
+    background-image: url(https://placehold.co/200x200);
     height: 100%;
     width: 100%;
 }
 
 .imageWrap:hover #imageDescriptionLayerOne {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageWrap:hover #imageDescriptionLayerTwo {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageWrap:hover #imageDescriptionLayerThree {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageWrap:hover #imageDescriptionLayerFour {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageWrap:hover #imageDescriptionLayerFive {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageWrap:hover #imageDescriptionLayerSix {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageWrap:hover #imageDescriptionLayerSeven {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageWrap:hover #imageDescriptionLayerEight {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageWrap:hover #imageDescriptionLayerNine {
     visibility: visible;
     opacity: 1;
 }
