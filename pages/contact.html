@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <title>Contact</title>
 </head>
 
 <body>
 
     <header>
         <div id="headerNavContainer">
-            <div><img src="https://placehold.co/50x50" alt="" id="headerIcon"></div>
+            <div><img src="../images/logo.jpeg" height="50" width="50" alt="logotype P" id="headerIcon"></div>
             <nav>
                 <a href="../index.html">Home</a>
                 <a href="about.html">About me</a>
@@ -19,11 +20,10 @@
             </nav>
         </div>
         <div id="headerImageContainer">
-            <div id="headerImage"></div>
-            <h1>Welcome to my page</h1>
+            <img id="headerImage" src="../images/headerImage.jpeg" alt="Animated image of a woman in front of a computer">
+            <h1>Welcome</h1>
         </div>
     </header>
-
 
     <main>
 
@@ -34,12 +34,29 @@
             </div>
         </section>
 
-        <section id="contactSectionTwo">
-            <div id="contactContainerOne"></div>
-            <div id="contactContainerTwo">
+        <section id="contactsectionTwo">
+            <h2>Lets work together</h2>
+            <div id="contactSectionTwoContainer">
+                <div>
+                    <h3>Email Address</h3>
+                    <p>Pranvera.gerbeshi@gmail.com</p>
+                </div>
+                <div>
+                    <h3>Phone number</h3>
+                    <p>+46 70-123 45 6789</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactSectionThree">
+            <div id="contactSectionThreeContainerOne">
+                <img src="../images/contactImage.jpeg" height="700" width="500" alt="">
+            </div>
+            <div id="contactSectionThreeContainerTwo">
                 <h2>Write me a message</h2>
-                <p>fhusebdjwkqnaxihugyejhvb</p>
-                <form action="">
+                <p>I normally respond within 24 hours!</p>
+                <form method="POST" action="mailto: pranveragerbeshi@gmail.com"
+                enctype="text/plain" id="contactForm">      
                     <div>
                         <div id="contactFormUpperArea">
                             <div>
@@ -67,27 +84,24 @@
                 </form>
             </div>
         </section>
-
-        <section id="contactSectionThree"></section>
     </main>
 
 
 
     <footer>
-        <div>
+        <div id="footerNavContainer">
             <nav>
                 <a href="about.html">About me</a>
                 <a href="portfolio.html">Portfolio</a>
             </nav>
         </div>
         <div id="footerIcon">
-            <img src="https://placehold.co/30x30" alt="">
-            <img src="https://placehold.co/30x30" alt="">
-            <img src="https://placehold.co/30x30" alt="">
+            <img src="../images/facebook.png" height="30" width="30" alt="Facebook logo">
+            <img src="../images/instagram.png" height="30" width="30" alt="Instagram logo">
+            <img src="../images/linkedin.png" height="30" width="30" alt="Linkedin logo">
         </div>
         <hr>
         <div id="footerContact">
-            <h2>Want to get in touch?</h2>
-            <a href="contact.html"><button>Click here to get in touch with me</button></a>
+            <a href="contact.html#contactForm"><button>Click here to get in touch with me</button></a>
         </div>
     </footer>

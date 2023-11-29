@@ -4,23 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <title>Homepage</title>
 </head>
 
 <body>
 
     <header>
         <div id="headerNavContainer">
-            <div><img src="https://placehold.co/50x50" alt="" id="headerIcon"></div>
+            <div><img src="images/logo.jpeg" height="50" width="50" alt="logotype P" id="headerIcon"></div>
             <nav>
-                <a href="index.html" style="font-weight: bold;">Home</a>
+                <a href="index.html" style="font-weight: bold; text-decoration: underline;">Home</a>
                 <a href="pages/about.html">About me</a>
                 <a href="pages/portfolio.html">Portfolio</a>
             </nav>
         </div>
         <div id="headerImageContainer">
-            <div id="headerImage"></div>
-            <h1>Welcome to my page</h1>
+            <img id="headerImage" src="images/headerImage.jpeg" alt="Animated image of a woman in front of a computer">
+            <h1>Welcome</h1>
         </div>
     </header>
 
@@ -28,11 +29,12 @@
 
     <main>
         <section id="indexSectionOne">
-            <h2>Selected Work</h2>
+            <h2>Latest projects</h2>
             <div id="indexSectionOneContainer">
                 <article>
-                    <div class="imageContainer"><img src="https://placehold.co/250x250" alt=""></div>
-                    <h3>Redirect</h3>
+                    <div class="imageContainer"><img src="images/indexProject1.jpeg" width="250" height="250"
+                            alt="Lounge area of a corporate building"></div>
+                    <h3>NBI Redirect</h3>
                     <p><span>Role: Web programmer</span>
                         <br> <br>
                         I led web development, leveraging HTML, CSS, and JavaScript to create an engaging portfolio
@@ -40,13 +42,15 @@
                         enhancements, possibly via Node.js or Django, streamlined performance. The result: a sleek,
                         interactive website showcasing my expertise as a versatile web programmer.
                         <br>
-                        <button>View project</button>
+                        <a href="pages/portfolio.html"></a><button class="indexSectionOneButton">View
+                            project</button></a>
                         <br>
-                        <a href="">View all projects</a>
+                        <a href="pages/portfolio.html">View all projects</a>
                     </p>
                 </article>
                 <article>
-                    <div class="imageContainer"><img src="https://placehold.co/250x250" alt=""></div>
+                    <div class="imageContainer"><img src="images/indexProject2.jpeg" width="250" height="250"
+                            alt="A Scandic hotel building"></div>
                     <h3>Scandic</h3>
                     <p><span>Role: UX-designer</span>
                         <br> <br>
@@ -56,13 +60,14 @@
                         cross-functional teams, I translated insights into seamless, responsive designs, ensuring a
                         delightful and accessible user experience.
                         <br>
-                        <button>View project</button>
+                        <a href="pages/portfolio.html"><button class="indexSectionOneButton">View project</button></a>
                         <br>
-                        <a href="">View all projects</a>
+                        <a href="pages/portfolio.html">View all projects</a>
                     </p>
                 </article>
                 <article>
-                    <div class="imageContainer"><img src="https://placehold.co/250x250" alt=""></div>
+                    <div class="imageContainer"><img src="images/indexProject3.jpeg" width="250" height="250"
+                            alt="A cozy café with people inside"></div>
                     <h3>Bröd&Bullar</h3>
                     <p><span>Role: Web programmer</span>
                         <br> <br>
@@ -72,9 +77,9 @@
                         and possibly frameworks like React or Vue.js, I ensured a seamless browsing experience across
                         devices.
                         <br>
-                        <button>View project</button>
+                        <a href="pages/portfolio.html"><button class="indexSectionOneButton">View project</button></a>
                         <br>
-                        <a href="">View all projects</a>
+                        <a href="pages/portfolio.html">View all projects</a>
                     </p>
                 </article>
             </div>
@@ -82,17 +87,19 @@
 
         <section id="indexSectionTwo">
             <div id="indexSectionTwoContainer">
-                <div id="indexSectionTwoImage"></div>
+                <div id="indexSectionTwoImage"> <img src="images/indexPassion.jpeg" height="500px" width="700px" alt="">
+                </div>
                 <article id="indexSectionTwoText">
-                    <h1>What I'm passionated <span>about</span></h1>
-                    <p>website. Using HTML, CSS, and JavaScript, I crafted a visually engaging platform that
-                        highlighted the café's ambiance and menu offerings. Incorporating responsive design principles
-                        and possibly frameworks like React or Vue.js, I ensured a seamless browsing expewebsite. Using
-                        HTML, CSS, and JavaScript, I crafted a visually engaging platform that
-                        highlighted the café's ambiance and menu offerings. Incorporating responsive design principles
-                        and possibly frameworks like React or Vue.js, I ensured a seamless browsing expe.
+                    <h3>What I'm passionated <span>about</span></h3>
+                    <p>I specialize in web design, UX/UI design, and web programming. With a passion for crafting
+                        engaging digital experiences, I blend creativity with technical expertise to create visually
+                        stunning and user-friendly websites. Explore my work and discover how I bring ideas to life
+                        through thoughtful design and seamless functionality. Driven by a love for innovation, I bring a
+                        diverse skill set to every project, ensuring a balance of aesthetic appeal and robust
+                        functionality. From intuitive user interfaces to dynamic web solutions, I aim to deliver
+                        impactful designs that resonate with users and leave a lasting impression.
                         <br>
-                        <a href="pages/about.html"><button>Learn more about me</button></a>
+                        <a href="pages/portfolio.html"><button class="indexSectionOneButton">View portfolio</button></a>
                     </p>
                 </article>
             </div>
@@ -102,21 +109,20 @@
 
 
     <footer>
-        <div>
+        <div id="footerNavContainer">
             <nav>
                 <a href="pages/about.html">About me</a>
                 <a href="pages/portfolio.html">Portfolio</a>
             </nav>
         </div>
         <div id="footerIcon">
-            <img src="https://placehold.co/30x30" alt="">
-            <img src="https://placehold.co/30x30" alt="">
-            <img src="https://placehold.co/30x30" alt="">
+            <img src="images/facebook.png" height="30" width="30" alt="Facebook logo">
+            <img src="images/instagram.png" height="30" width="30" alt="Instagram logo">
+            <img src="images/linkedin.png" height="30" width="30" alt="Linkedin logo">
         </div>
         <hr>
         <div id="footerContact">
-            <h2>Want to get in touch?</h2>
-            <a href="pages/contact.html"><button>Click here to get in touch with me</button></a>
+            <a href="pages/contact.html#contactForm"><button>Click here to get in touch with me</button></a>
         </div>
     </footer>
 </body>
