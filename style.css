@@ -361,6 +361,11 @@ hr {
     margin: var(--sizeSmall) var(--sizeBig);
 }
 
+#aboutSectionTwoImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
 #aboutSectionThree {
     background-color: var(--main-color);
     padding: var(--sizeMedium);
@@ -579,10 +584,6 @@ input {
 
     .imageWrap>div {
         padding: var(--sizeSmall);
-    }
-
-    #headerNavContainer>nav {
-        border: 1px solid red;
     }
 
     nav>a {
